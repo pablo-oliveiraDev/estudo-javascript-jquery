@@ -19,10 +19,10 @@ function consultaCep(){
         success: function(response){
             console.log(response);
            
-            document.getElementById("logradouro").innerHTML ='Logradouro: ' + response.logradouro;
-            document.getElementById("Complemento").innerHTML ='Complemento: ' + response.complemento;
-            document.getElementById("Bairro").innerHTML ='Bairro: ' + response.bairro;
-            document.getElementById("Cidade").innerHTML ='Cidade: ' + response.localidade;
+           $("#logradouro").html(response.logradouro);
+           $("#complemento").html(response.complemento);
+           $("#bairro").html(response.bairro);
+           $("#localidade").html(response.localidade);
         }
     })
 }

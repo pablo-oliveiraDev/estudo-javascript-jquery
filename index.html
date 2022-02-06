@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,37 @@
     <link rel="stylesheet" href="./src/css/estilos.css">
     <title>estudo bibliotecas</title>
 </head>
+
 <body>
-    <input id="cep"  >
-    <button  type="button" onclick="consultaCep()">consultar</button>
-    <div id="Dados"> <h1>Dados do cep</h1></div>
-    <div id="texto" >
-        <p id="logradouro"></p>
-        <p id="Complemento"></p>
-        <p id="Bairro"></p>
-        <p id="Cidade"></p>
+    <input id="cep">
+    <button type="button" onclick="consultaCep()">consultar</button>
+    <div id="Dados">
+        <h1>Dados do cep</h1>
     </div>
-   
+    <div id="texto">
+
+        <table >
+            <tr>
+                <td> Logradouro: </td>
+                <td id="logradouro"> </td>
+            </tr>
+            <tr>
+                <td>Complemento:</td>
+                <td id="complemento"></td>
+            </tr>
+            <tr>
+                <td>Bairro:</td>
+                <td id="bairro"></td>
+            </tr>
+            <tr>
+                <td>UF:</td>
+                <td id="localidade"></td>
+            </tr>
+        </table>
+    </div>
+
     <script type="text/javascript" src="./src/java/java.js"></script>
     <script type="text/javascript" src="./src/java/jquery-3.6.0.min.js"></script>
 </body>
+
 </html>
