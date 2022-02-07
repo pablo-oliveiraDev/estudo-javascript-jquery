@@ -1,11 +1,12 @@
 
 
  var dados;
- 
+
 
 function consultaCep(){
     document.getElementById("texto").classList.add("mostrar");
     document.getElementById("Dados").classList.add("mostrar");
+    $(".progress").hide();
     var cep = document.getElementById("cep").value;
    
      Number(cep);
