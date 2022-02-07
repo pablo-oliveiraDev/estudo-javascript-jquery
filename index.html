@@ -10,29 +10,31 @@
 </head>
 
 <body>
-    <input id="cep">
-    <button type="button" onclick="consultaCep()">consultar</button>
+    <div class="navbar">
+        <input id="cep" placeholder="Digite aqui o cep">
+        <button type="button" onclick="consultaCep()">Consultar</button>
+    </div>
     <div id="Dados">
         <h1>Dados do cep</h1>
     </div>
     <div id="texto">
 
-        <table >
+        <table>
             <tr>
                 <td> Logradouro: </td>
                 <td id="logradouro"> </td>
-            </tr>
-            <tr>
-                <td>Complemento:</td>
-                <td id="complemento"></td>
             </tr>
             <tr>
                 <td>Bairro:</td>
                 <td id="bairro"></td>
             </tr>
             <tr>
-                <td>UF:</td>
+                <td>Localidade:</td>
                 <td id="localidade"></td>
+            </tr>
+            <tr>
+                <td>UF:</td>
+                <td id="UF"></td>
             </tr>
         </table>
     </div>

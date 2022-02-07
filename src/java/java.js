@@ -20,7 +20,7 @@ function consultaCep(){
             console.log(response);
            
            $("#logradouro").html(response.logradouro);
-           $("#complemento").html(response.complemento);
+           $("#UF").html(response.uf);
            $("#bairro").html(response.bairro);
            $("#localidade").html(response.localidade);
         }
